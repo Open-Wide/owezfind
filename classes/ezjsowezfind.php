@@ -8,14 +8,14 @@ class ezJsOwEzfind
     {
         if ( is_numeric( $args[0] ) ) {
             $object = eZContentObject::fetch( $args[0] );
-            if ( $object instanceof eZContentObjectTreeNode ) {
+            if ( $object instanceof eZContentObject ) {
                 $searchEngine = new eZSolr();
                 $result = $searchEngine->addObject( $object, false );
                 $searchEngine->commit();
-                return "Objet indexé.";
+                return 'Successfully indexed.';
             }
         }
-    	return 'false';
+    	return 'An error occured.';
     }
 }
 ?>
