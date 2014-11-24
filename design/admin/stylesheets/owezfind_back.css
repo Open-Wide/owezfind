@@ -1,0 +1,14 @@
+#owezfind-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.8em 1.5em 10px;
+}
+#owezfind-box .feedback {
+    text-align: center;
+    background: #fff;
+    border: 1px #888 solid;
+    border-radius: 3px;
+    opacity: 0;
+}
+
